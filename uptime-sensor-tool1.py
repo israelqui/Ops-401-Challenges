@@ -21,5 +21,5 @@ def monitoring(ips):# def check_hosts_status(ips):: Defines a function named che
             print(f"{timestamp} {status} to {ip}")
         time.sleep(2)  # Wait for 2 seconds before sending the next ICMP packet
 
-ips_to_ping = ['8.8.8.8', '192.168.0.235', 'google.com']
+ips_to_ping = ['8.8.8.8', '10.0.1.0', 'google.com']
 monitoring(ips_to_ping)
