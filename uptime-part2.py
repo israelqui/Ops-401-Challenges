@@ -22,7 +22,7 @@ def send_notification(sender_email, sender_password, receiver_email, subject, me
     try:
         with smtplib.SMTP('smtp.mail.yahoo.com', 587) as server:  # Replace with your SMTP server and port
             server.starttls()
-            server.login(email@user.com, password)
+            server.login(sender_email, sender_password)
             server.sendmail(sender_email, receiver_email, msg.as_string())
         print("Notification sent successfully.")
     except Exception as e:
