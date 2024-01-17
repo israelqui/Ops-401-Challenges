@@ -29,7 +29,7 @@ def encrypt_file(file_path, key):
 
     with open(file_path, "wb") as file:
         file.write(encrypted_data)
-#encrypt_file(file_path, key): A function that encrypts the contents of a file specified by file_path using the provided key and overwrites the file with the encrypted data.
+# encrypt_file(file_path, key): A function that encrypts the contents of a file specified by file_path using the provided key and overwrites the file with the encrypted data.
 
 
 def decrypt_file(file_path, key):
