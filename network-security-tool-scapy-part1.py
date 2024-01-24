@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# Script Name: TCP Port Range Scanner Part 1
+# Description: This script uses Scapy to perform a TCP port scan on a target host and determine whether each port is open, closed, or filtered.
+# Author: Israel Quirola
+# Date: January 24, 2024
 
 from scapy.all import *
 
