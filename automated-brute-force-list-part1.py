@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Script Name: TCP Port Range Scanner Part 3
+# Script Name: Automated Brute Force Wordlist Attack Tool Part 1 of 3
 # Description: This script defines two functions (offensive_mode and defensive_mode) for the respective modes and a main function to handle user input and mode selection
 # Author: Israel Quirola
 # Date: January 30, 2024
