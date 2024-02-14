@@ -4,6 +4,7 @@
 # Author: Israel Quirola
 # Date: February 13, 2024
 
+# Import libraries
 import logging
 
 # Configure logging
@@ -28,3 +29,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
