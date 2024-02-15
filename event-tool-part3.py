@@ -6,9 +6,12 @@
 
 # Import libraries
 import logging
+from logging.handlers import RotatingFileHandler, SMTPHandler
+import sys
 
 # Create our logger object
 logger = logging.getLogger('my_logger')
+
 # logging.basicConfig(level=logging.DEBUG, handlers=[logging.FileHandler('logs.log'), ])
 
 # Create handlers
@@ -35,3 +38,23 @@ logger.addHandler(s_handler)
 
 logger.warning("This is a warning!")
 logger.error("This is an error")
+
+def divide_numbers(x, y):
+    try:
+        result = x / y
+        logging.info(f'Division result: {result}')
+        return result
+    except ZeroDivisionError as e:
+        logging.error(f'Error occurred: {e}')
+        return None
+
+def main():
+    # Perform some calculations
+    logging.info('Starting the program...')
+    result1 = divide_numbers(10, 2)
+    result2 = divide_numbers(8, 0)  # Intentionally induce an error
+    result3 = divide_numbers(20, 4)
+    logging.info('Program finished.')
+
+if __name__ == "__main__":
+    main()
