@@ -78,3 +78,16 @@ if __name__ == "__main__":
 
 ### TODO: Test this script against one XSS-positive target and one XSS-negative target
 ### TODO: Paste the outputs here as comments in this script, clearling indicating which is positive detection and negative detection
+
+# Test against XSS-positive target
+# Enter a URL to test for XSS: http://example.com/vulnerable_page
+# [+] Detected 1 forms on http://example.com/vulnerable_page.
+# [+] XSS Detected on http://example.com/vulnerable_page
+# [*] Form details:
+# {'action': '/submit_form', 'inputs': [{'type': 'text', 'name': 'input1'}, {'type': 'submit', 'name': 'submit'}], 'method': 'post'}
+# True
+
+# Test against XSS-negative target
+# Enter a URL to test for XSS: http://example.com/secure_page
+# [+] Detected 1 forms on http://example.com/secure_page.
+# False
